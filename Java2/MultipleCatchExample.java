@@ -3,12 +3,13 @@ public class MultipleCatchExample{
         try{
             String str = null;
             System.out.println(str.length());
-        // 'catch(NullPointerException e){'
-        //     System.out.println("Error: null pointer exception!!");
+        catch(NullPointerException e){
+            System.out.println("Error: null pointer exception!!");
         }
         catch(Exception e){
             System.out.println("some other error");
         }
         System.out.println("program continues after exception handling.");
     }
+}
 }
